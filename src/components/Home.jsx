@@ -1,9 +1,3 @@
-// import React from "react";
-
-// export const Home = () => {
-//   return <h1>Home Page</h1>;
-// };
-
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useCookies } from "react-cookie";
@@ -18,7 +12,6 @@ export const Home = () => {
     const verifyCookie = async () => {
       if (!cookies.token) {
         console.log("no token");
-      // navigate("/login");
       }
       const { data } = await axios.post(
         "http://localhost:5000",

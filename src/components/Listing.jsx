@@ -7,8 +7,7 @@ export const Listing = () => {
   const [exercises, setExercises] = useState([]);
 
   const Exercise = ({ exercise }) => {
-    // Format the date using JavaScript's Date object
-    const formattedDate = new Date(exercise.date).toLocaleDateString();
+  const formattedDate = new Date(exercise.date).toLocaleDateString();
 
     return (
       <tr>
